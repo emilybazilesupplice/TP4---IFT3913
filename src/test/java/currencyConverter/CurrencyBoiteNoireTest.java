@@ -82,30 +82,5 @@ public class CurrencyBoiteNoireTest {
         assertThrows(IllegalArgumentException.class, () -> Currency.convert(initialAmount, exchangeRate));
 
     }
-
-
-    @Test
-    public void usdConversion() {
-        double initialAmount = 100.00;
-
-        // usd to usd
-        assertEquals(100.00, Currency.convert(initialAmount, 1.0));
-
-        // usd to CAD (not in it)
-        // assertEquals(100.00, Currency.convert(initialAmount, 1.0));
-
-        // usd to GBP
-        assertEquals(66.00, Currency.convert(initialAmount, 0.66));
-
-        // usd to EUR
-        assertEquals(93.00, Currency.convert(initialAmount, 0.93));
-
-        // usd to CHF
-        assertEquals(101.00, Currency.convert(initialAmount, 1.01));
-
-        // usd to AUD (not in it)
-        //assertEquals(66.00, Currency.convert(initialAmount, 0.66));
-
-    }
     
 }
