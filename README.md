@@ -1,23 +1,37 @@
-# currency-converter-in-java
+# TP2=3---IFT3913
+ 
+|Nom|Matricule|     
+|----|-----|     
+|Emily Bazile-Supplice|20200848|
+|Eed Flory Jean-Baptiste|20168335|
 
+## Overview
 
-Currency converter (or currency exchange) is a mini project coded in Java programming language. This simple application provides a web-based interface for exchanging/converting money from one currency (say $) to another currency (say €).
+This project is focused on implementing and testing a currency converter application. The application is designed to convert amounts between different currencies: USD, CAD, GBP, EUR, CHF, and AUD, accepting amounts between 0 and 1,000,000. The project involves both black box and white box testing methods to ensure the functionality and reliability of the application.
 
-The complete source code of currency exchange application can be downloaded from the link below. As this is just a mini project, project report and documentation are not available. You can go through the description below for project abstract.
+## Development
 
-Currency Converter Project Abstract:
-Different countries use different currency, and there is daily variation in these currencies relative to one another. Those who transfer money from one country to another (one currency to another) must be updated with the latest currency exchange rates in the market.
+The project's source code is available on GitHub. You can access the repository using the following link:
+[TP4---IFT3913 GitHub Repository](https://github.com/emilybazilesupplice/TP4---IFT3913)
 
-Currency converter mini project is built keeping this thing in mind. It is simply a calculator-like app developed using Ajax, Java servlets web features. In this application, there is regular update about currency of every country by which it displays present currency market value and conversion rate.
+## How to Run the test
 
-Such application can be used by any user, but it is mainly useful for business, shares, and finance related areas where money transfer and currency exchange takes place on a daily basis.
+The tests are located in the src/test/java/currencyConverter folder. There are four different test files:
 
-In this currency converter app, users are provided with an option to select the type of conversion, i.e. from "this" currency to "that" currency. This simple feature allows users to enter amount to be converted (say currency in Dollars), and display the converted amount (say currency in Euro).
+* CurrencyBoiteBlanche.java
+* CurrencyBoiteNoir.java
+* MainWindowBoiteBlanche.java
+* MainWindowBoiteNoir.java
 
+If you are using JUnit 5 and Maven, you can run the tests from the command line using the following command in the project root directory:
 
+    mvn test
 
-visit more projects - https://projectworlds.in
+This command will automatically find and run all tests in your project.
 
-demo- https://www.projectworlds.in/java-projects-with-source-code/currency-converter-java-mini-project/
+Alternatively, if you are using an Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse, you can run the tests as follows:
 
+1. Right-click on the currencyConverter folder in the test directory.
+2. Select 'Run Tests'.
 
+Make sure your IDE is configured to use JUnit 5 for running the tests.
